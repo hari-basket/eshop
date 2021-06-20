@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   // apiUrl: 'http://localhost:3000/api/v1/'
-  apiUrl: 'http://hari-basket.ap-south-1.elasticbeanstalk.com/api/v1/',
+  apiUrl: 'https://hari-basket.herokuapp.com/api/v1/',
 };
 
 /*
