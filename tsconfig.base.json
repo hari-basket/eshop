@@ -1,0 +1,26 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@maa/ui": ["libs/ui/src/index.ts"],
+      "@maa/users": ["libs/users/src/index.ts"],
+      "@maa/orders": ["libs/orders/src/index.ts"],
+      "@maa/products": ["libs/products/src/index.ts"],
+      "@env/*": ["environments/*"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

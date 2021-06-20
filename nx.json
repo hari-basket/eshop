@@ -1,0 +1,49 @@
+{
+  "implicitDependencies": {
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    ".eslintrc.json": "*"
+  },
+  "affected": {
+    "defaultBase": "master"
+  },
+  "npmScope": "maa",
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/workspace/tasks-runners/default",
+      "options": {
+        "cacheableOperations": ["build", "lint", "test", "e2e"]
+      }
+    }
+  },
+  "projects": {
+    "hari-basket": {
+      "tags": []
+    },
+    "hari-basket-e2e": {
+      "tags": [],
+      "implicitDependencies": ["hari-basket"]
+    },
+    "admin": {
+      "tags": []
+    },
+    "admin-e2e": {
+      "tags": [],
+      "implicitDependencies": ["admin"]
+    },
+    "ui": {
+      "tags": []
+    },
+    "users": {
+      "tags": []
+    },
+    "orders": {
+      "tags": []
+    },
+    "products": {
+      "tags": []
+    }
+  }
+}
