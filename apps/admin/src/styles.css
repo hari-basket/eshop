@@ -3,6 +3,10 @@
 /*
  * Remove template code below
  */
+body {
+  margin: 0px;
+  padding: 0px;
+}
 :host {
   display: block;
   font-family: sans-serif;
