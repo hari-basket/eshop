@@ -12,16 +12,9 @@ import { LocalstorageService } from '../../services/localstorage.service';
     `
       .login-register {
         background-image: linear-gradient(235deg, #565867, #191a25);
-        height: 100vh;
+        color: white;
       }
-      .login-register-panel {
-        width: 650px;
-        height: 525px;
-        background-color: var(--surface-a);
-        position: absolute;
-        left: calc(50% - 325px);
-        top: calc(50% - 260px);
-      }
+
       .login-register-panel .full-btn {
         width: 100%;
       }

@@ -167,7 +167,10 @@
             "polyfills": "apps/admin/src/polyfills.ts",
             "tsConfig": "apps/admin/tsconfig.app.json",
             "assets": ["apps/admin/src/favicon.ico", "apps/admin/src/assets"],
-            "styles": ["apps/admin/src/styles.css"],
+            "styles": [
+              "apps/admin/src/styles.css",
+              "./node_modules/primeflex/primeflex.css"
+            ],
             "scripts": []
           },
           "configurations": {
