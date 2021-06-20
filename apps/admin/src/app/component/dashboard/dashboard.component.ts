@@ -9,7 +9,7 @@ import { UsersService } from '@maa/users';
   templateUrl: './dashboard.component.html',
 })
 export class DashboardComponent implements OnInit {
-  statistics = [0, 0, 0, 0];
+  statistics = [0, 0, 1, 0];
   constructor(
     private userService: UsersService,
     private productService: ProductsService,
