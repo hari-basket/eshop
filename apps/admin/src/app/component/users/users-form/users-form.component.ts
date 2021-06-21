@@ -48,7 +48,7 @@ export class UsersFormComponent implements OnInit {
     this.form = this.formBuilder.group({
       full_name: ['', Validators.required],
       password: ['', Validators.required],
-      email: ['', [Validators.required, Validators.email]],
+      email: ['', [Validators.email]],
       contact: [null, Validators.required],
       role_id: [null, Validators.required],
     });
@@ -60,7 +60,7 @@ export class UsersFormComponent implements OnInit {
         this.messageService.add({
           severity: 'success',
           summary: 'Success',
-          detail: `User ${user.full_name} is created!`,
+          detail: `User added successfully!`,
         });
         timer(2000)
           .toPromise()

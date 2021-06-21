@@ -18,31 +18,31 @@
       <div class="p-col-12">
         <form [formGroup]="form">
           <div class="p-fluid p-formgrid p-grid">
-            <div class="p-field p-col-4">
+            <div class="p-field p-col-12 p-md-4">
               <label for="name">Name</label>
               <input formControlName="full_name" id="name" type="text" pInputText />
               <small *ngIf="userForm.full_name.invalid && isSubmitted" class="p-error">Name is required</small>
             </div>
-            <div class="p-field p-col-4">
+            <div class="p-field p-col-12 p-md-4">
               <label for="email">Email</label>
               <input formControlName="email" id="email" type="text" pInputText />
               <small *ngIf="userForm.email.invalid && isSubmitted" class="p-error"><span
                   *ngIf="userForm.email.errors.required">email is required</span>
                 <span *ngIf="userForm.email.errors.email">email is invalid</span></small>
             </div>
-            <div class="p-field p-col-4">
+            <div class="p-field p-col-12 p-md-4">
               <label for="password">Password</label>
               <input formControlName="password" id="password" type="password" pInputText />
               <small *ngIf="userForm.password.invalid && isSubmitted" class="p-error">Password is required</small>
             </div>
-            <div class="p-field p-col-4">
+            <div class="p-field p-col-12 p-md-4">
               <label for="color">Phone</label><br />
               <!-- <p-inputMask mask="(999) 999-9999" id="contact" formControlName="contact" placeholder="(999) 999-9999">
               </p-inputMask> -->
               <input formControlName="contact" id="contact" type="number" pInputText placeholder="(999) 999-9999" />
               <small *ngIf="userForm.contact.invalid && isSubmitted" class="p-error">phone is required</small>
             </div>
-            <div class="p-field p-col-4">
+            <div class="p-field p-col-12 p-md-4">
               <label for="isAdmin">User Role</label><br />
               <p-dropdown [options]="roles" formControlName="role_id" optionLabel="title" optionValue="id"
                 [filter]="true" filterBy="title" [showClear]="true" placeholder="Select a Role"></p-dropdown>
